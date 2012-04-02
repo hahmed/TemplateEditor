@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <link href="../../assets/aloha/css/aloha.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/Site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../assets/aloha/lib/vendor/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="../../assets/aloha/lib/aloha.js" data-aloha-plugins="common/format,common/list,common/table,common/link,common/undo,common/paste,common/block"></script>
+    <script type="text/javascript" src="../../assets/js/colresizer.js"></script>
+    <script type="text/javascript" src="../../assets/js/alohaconfig.js"></script>
+</head>
+<body data-fields-url="/templatemanager/getfields">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

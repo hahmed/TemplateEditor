@@ -1,0 +1,5 @@
+C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\TemplateEditor.dll
+C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\TemplateEditor.pdb
+C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.dll
+C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.pdb

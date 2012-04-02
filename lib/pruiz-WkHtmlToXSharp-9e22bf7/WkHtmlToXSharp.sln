@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlToXSharp", "WkHtmlToXSharp\WkHtmlToXSharp.csproj", "{3DADECBF-6D08-4090-9A1D-2064D0466381}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{DE09F008-4955-4A7E-BA60-47605970285B}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\Common.Logging.dll = Libs\Common.Logging.dll
+		Libs\Common.Logging.Log4Net.dll = Libs\Common.Logging.Log4Net.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A8EA9D36-9972-41FE-95E2-3509209FE895}"
+	ProjectSection(SolutionItems) = preProject
+		README = README
+		TODO = TODO
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WkHtmlToXSharp.Tests", "WkHtmlToXSharp.Tests\WkHtmlToXSharp.Tests.csproj", "{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{142239E2-0554-49E5-A929-3EEBEDD7CCC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet.CommandLine.1.6.0", "NuGet.CommandLine.1.6.0", "{C1F2D225-CBAC-420B-8F79-7CAE6606EB2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{DD2E578C-C004-47B2-AA7C-731314D717A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{4D64807C-4F56-4BAB-BD10-287F99DE048C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnixUtils", "UnixUtils", "{B1814D74-4919-40B1-95B9-DD71E413DA1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Debug|x86.ActiveCfg = Debug|x86
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Debug|x86.Build.0 = Debug|x86
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Release|x64.ActiveCfg = Release|Any CPU
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Release|x86.ActiveCfg = Release|Any CPU
+		{3DADECBF-6D08-4090-9A1D-2064D0466381}.Release|x86.Build.0 = Release|Any CPU
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Debug|x86.ActiveCfg = Debug|x86
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Debug|x86.Build.0 = Debug|x86
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Release|x64.ActiveCfg = Release|Any CPU
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Release|x86.ActiveCfg = Release|Any CPU
+		{F5C842CB-2C68-44A1-8C4C-600B00F0C3B5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1F2D225-CBAC-420B-8F79-7CAE6606EB2F} = {142239E2-0554-49E5-A929-3EEBEDD7CCC1}
+		{DD2E578C-C004-47B2-AA7C-731314D717A4} = {C1F2D225-CBAC-420B-8F79-7CAE6606EB2F}
+		{B1814D74-4919-40B1-95B9-DD71E413DA1B} = {4D64807C-4F56-4BAB-BD10-287F99DE048C}
+	EndGlobalSection
+EndGlobal

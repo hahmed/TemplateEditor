@@ -1,0 +1,238 @@
+﻿html, body {
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #404040;
+    font-family: Verdana,Helvetica,sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+.ui-page-widgets {
+    color: Black;
+    float: left;
+    height: 300px;
+    width: 6cm;
+}
+.ui-page-border {
+    border: 1px solid #BBBBBB;
+}
+.ui-page-content {
+    background-color: White;
+    cursor: text;
+    font-family: Arial,sans-serif,sans;
+    font-size: 11pt;
+    margin: 15px auto;
+    min-height: 27.5cm;
+    padding: 30px;
+    white-space: normal;
+    width: 17.5cm;
+}
+.ui-page-footer-spacer {
+    clear: both;
+    height: 100px;
+}
+.ui-fancy-link:link {
+    color: #0066CC;
+}
+.ui-fancy-link:visited {
+    color: #0066CC;
+}
+.ui-fancy-link:hover {
+    color: #424242;
+}
+.ui-fancy-link:active {
+    color: #0066CC;
+}
+.ui-canvas-button {
+    border: 1px outset #404040;
+    cursor: pointer;
+    float: left;
+    margin: 0 4px 0 0;
+    min-width: 80px;
+    outline: 0 none;
+    padding: 0.4em 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: 0 0 1px #FFFFFF;
+    white-space: nowrap;
+}
+.ui-priority-secondary {
+    font-size: 11px;
+    opacity: 0.8;
+}
+.ui-fancybtn-important:hover, .ui-fancybtn-important:focus {
+    background: none repeat scroll 0 0 #02E10C;
+    color: white;
+}
+.ui-fancybtn-important:active {
+    background: none repeat scroll 0 0 #6BED71;
+    box-shadow: 0 0.08em 0.1em 1px #02E10C inset;
+}
+.menu-wrapper {
+    background-color: #E4E4E4;
+    border-bottom: 2px solid #D3D3D3;
+    clear: both;
+    font-size: 12px;
+    width: 100%;
+}
+.menu {
+    height: 40px;
+    margin: 0 auto;
+    padding: 2px 5px 3px;
+    width: 800px;
+}
+.template-title {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+.serverresponse {
+    color: Red;
+    display: none;
+    float: left;
+    margin: 1px 0;
+    padding: 0;
+}
+.serverreply {
+    margin: 0 10px;
+}
+.validation-summary-errors {
+    color: Red;
+}
+#ui-widgets {
+    float: left;
+    font-size: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+.MainLinks {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.textwrapper {
+    float: left;
+    width: 850px;
+}
+.optionswrapper {
+    float: right;
+    width: 250px;
+}
+.ui-udfwrapper {
+    height: 350px;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+}
+.ui-field-list {
+    height: 294px;
+    list-style: none outside none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+}
+.ui-field-list li.ui-parent-field {
+    background-color: #DEDEDE;
+    border-bottom: 1px solid white;
+    margin: 0;
+    min-height: 30px;
+    padding: 0;
+}
+.ui-field-list ul.ui-child-list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.ui-field-list li.ui-child-field {
+    background-color: #E4E4E4;
+    margin: 0;
+    min-height: 20px;
+    padding: 0;
+}
+.editor-field {
+    float: left;
+}
+.ui-udfwrapper input[type="text"] {
+    height: 15px;
+    width: 145px;
+}
+.ui-udfwrapper .SmallTextArea {
+    height: 60px;
+    width: 280px;
+}
+.ui-page-content h1 {
+    color: black;
+    font-family: Arial,Arial Narrow,sans-serif;
+    font-size: 22pt;
+    margin: 0;
+    padding: 0;
+}
+.ui-page-content h2 {
+    color: black;
+    font-family: Arial,Arial Narrow,sans-serif;
+    font-size: 18pt;
+    margin: 0;
+    padding: 0;
+}
+.ui-page-content h3 {
+    color: black;
+    font-family: Arial,Arial Narrow,sans-serif;
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
+}
+.ui-page-content h4 {
+    color: black;
+    font-family: Arial,Arial Narrow,sans-serif;
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+}
+.ui-page-content h5 {
+    color: black;
+    font-family: Arial,Arial Narrow,sans-serif;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+.ui-page-content h6 {
+    color: black;
+    font-family: Arial,Arial Narrow,sans-serif;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+}
+.ui-page-content br {
+    line-height: 8mm;
+    margin: 0;
+    padding: 0;
+}
+.ui-page-content p {
+    line-height: 5mm;
+    margin: 0;
+    padding: 0;
+}
+.ui-page-content {
+    color: Black;
+    font-family: Arial,Arial Narrow,sans-serif;
+    font-size: 9pt;
+}
+.ui-page-content p, .ui-page-content a, .ui-page-content b, .ui-page-content strong, .ui-page-content span, .ui-page-content table, .ui-page-content ul, .ui-page-content ol {
+    font-family: Arial,Arial Narrow,sans-serif;
+    font-size: 9pt;
+}
+.aloha-table-column-resize-dragger {
+    cursor: col-resize;
+    height: 100%;
+    position: absolute;
+    width: 7px;
+}
+.aloha-table-column-resize-guide {
+    background: none repeat scroll 0 0 #6688EE;
+    height: 100%;
+    position: absolute;
+    width: 1px;
+}
