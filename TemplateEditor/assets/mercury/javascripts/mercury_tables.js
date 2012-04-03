@@ -7,9 +7,7 @@ var onSampleResized = function(e) {
     var table = jQuery(e.currentTarget); //reference to the resized table
 };
 
-$("table").live("click", function(e) {
-console.debug("that sounds good......");
-    
+$("table").live("click", function(e) {   
     $(this).colResizable({
         liveDrag: true,
         gripInnerHtml: "<div class='te-resizegrip'></div>",
