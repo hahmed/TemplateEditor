@@ -1,8 +1,3 @@
-C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\TemplateEditor.dll
-C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\TemplateEditor.pdb
-C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\ResolveAssemblyReference.cache
-C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.dll
-C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.pdb
 C:\Projects\TemplateEditor\TemplateEditor\bin\TemplateEditor.dll
 C:\Projects\TemplateEditor\TemplateEditor\bin\TemplateEditor.pdb
 C:\Projects\TemplateEditor\TemplateEditor\bin\Common.Logging.dll
@@ -10,3 +5,10 @@ C:\Projects\TemplateEditor\TemplateEditor\bin\WkHtmlToXSharp.dll
 C:\Projects\TemplateEditor\TemplateEditor\obj\Debug\ResolveAssemblyReference.cache
 C:\Projects\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.dll
 C:\Projects\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.pdb
+C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\TemplateEditor.dll
+C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\TemplateEditor.pdb
+C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\Common.Logging.dll
+C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\WkHtmlToXSharp.dll
+C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.dll
+C:\Projects\devnet\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.pdb

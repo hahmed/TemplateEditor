@@ -10,6 +10,8 @@ namespace TemplateEditor.Controllers
     [HandleError]
     public class HomeController : Controller
     {
+
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public ActionResult Index()
         {
             return View();
@@ -54,7 +56,7 @@ namespace TemplateEditor.Controllers
                 wk.ObjectSettings.Web.EnablePlugins = false;
                 wk.ObjectSettings.Web.EnableJavascript = false;
                 
-                using (var stream = new MemoryStream(ReadHtmlFromFile(@"C:\Projects\TemplateEditor\TemplateEditor\lib\test.xhtml")))
+                using (var stream = new MemoryStream(ReadHtmlFromFile(@"C:\Projects\devnet\TemplateEditor\TemplateEditor\lib\test.xhtml")))
                 using (var sr = new StreamReader(stream))
                 {
                     var str = sr.ReadToEnd();

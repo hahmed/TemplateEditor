@@ -4,30 +4,9 @@
     Home Page
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="menu-wrapper">
-        <div data-save-url="/templatemanager/18/templatebuilder/savetemplate" class="menu">
-            <p class="template-title">
-                testing...
-            </p>
-            <span style="float: left;"><a id="lnkCloseUI" href="/templatemanager/18" class="ui-priority-secondary ui-button-text-icon-primary ui-button ui-fancy-link">
-                <span class="ui-button-text ui-fancybtn">back to details</span><span class="ui-icon-arrow-1-w ui-icon ui-button-text-icon-primary"></span></a>
-            </span>
-            <div class="serverresponse">
-                <img id="loading" src="/Public/Images/loading.gif">
-                <strong id="serverreply"></strong>
-            </div>
-            <span style="float: right;"><a class="ui-fancybtn-important ui-priority-secondary ui-corner-all ui-button-text-only ui-state-default ui-button ui-canvas-button"
-                target="_blank" href="/templatemanager/18/preview/template.pdf" id="lnkPreviewPdf">
-                <span class="ui-button-text ui-fancybtn">preview pdf</span></a>
-                <button type="button" role="button" id="btnSaveTemplate" class="ui-fancybtn-important ui-priority-secondary ui-corner-all ui-button-text-only ui-state-default ui-button ui-canvas-button"
-                    aria-disabled="true">
-                    <span class="ui-button-text ui-fancybtn">save</span></button>
-            </span>
-        </div>
-    </div>
     <br class="clear">
     <div class="ui-page-container ui-page-border ui-page-content">
-        <div class="canvas-updateable aloha-editable-active" id="coverpage-canvas">
+        <div class="canvas-updateable mercury-region" id="coverpage-canvas" data-type="editable">
             <br>
             <br>
             <h3 style="text-align: center;">
@@ -57,20 +36,18 @@
                     </colgroup>
                     <tbody style="text-align: left;">
                         <tr class="aloha-table-selectcolumn" style="height: 10px;">
-                            <td class="aloha-table-leftuppercorner">
-                                <div style="width: 25px; height: 12px;" class="aloha-wai-red">
-                                </div>
+                            <td class="te-resizeable">
                             </td>
-                            <td>
+                            <td class="te-resizeable">
                                 &nbsp;
                             </td>
-                            <td>
+                            <td class="te-resizeable">
                                 &nbsp;
                             </td>
-                            <td>
+                            <td class="te-resizeable">
                                 &nbsp;
                             </td>
-                            <td>
+                            <td class="te-resizeable">
                                 &nbsp;
                             </td>
                         </tr>
@@ -461,7 +438,7 @@
     </div>
     <br class="clear">
     <div class="ui-page-container ui-page-border ui-page-content">
-        <div class="canvas-updateable" id="bodypage-canvas">
+        <div class="canvas-updateable mercury-region" id="bodypage-canvas" data-type="editable">
             <h4 style="text-align: center;">
                 Property Valuation Report</h4>
             <p>
@@ -808,67 +785,67 @@
             </table>
             <p>
             </p>
-            <table border="0" style="width: 100%;border: medium none;border-collapse:collapse;">
+            <table border="0" style="width: 100%; border: medium none; border-collapse: collapse;">
                 <colgroup>
                     <col width="20%">
                     <col width="80%">
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             Ground floor<br>
                         </td>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             <label contenteditable="false" data-field-order="33" data-field-class="ui-templatefield"
                                 data-field-id="40" data-field-type="userdefinedfield" title="GroundFloorDescription | userdefinedfield | Text | Ground Floor - describe the accommodation in detail.">
                                 [0Description]</label><br>
                         </td>
                     </tr>
                     <tr>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             First floor<br>
                         </td>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             <label contenteditable="false" data-field-order="34" data-field-class="ui-templatefield"
                                 data-field-id="41" data-field-type="userdefinedfield" title="FirstFloorDescription | userdefinedfield | Text | First Floor - describe the accommodation in detail.">
                                 [1Description]</label><br>
                         </td>
                     </tr>
                     <tr>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             Second floor<br>
                         </td>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             <label contenteditable="false" data-field-order="1" data-field-class="ui-templatefield"
                                 data-field-id="2" data-field-type="userdefinedfield" title="SecondFloorDescription | userdefinedfield | Text | Second Floor - Describe the accommodation in detail">
                                 [2Decsripion]</label><br>
                         </td>
                     </tr>
                     <tr>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             Other<br>
                         </td>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             <label contenteditable="false" data-field-order="35" data-field-class="ui-templatefield"
                                 data-field-id="42" data-field-type="userdefinedfield" title="OtherDescription | userdefinedfield | Text | Other - describe the accommodation in detail.">
                                 [Description]</label><br>
                         </td>
                     </tr>
                     <tr>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             Outside
                         </td>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             <label contenteditable="false" data-field-order="36" data-field-class="ui-templatefield"
                                 data-field-id="43" data-field-type="userdefinedfield" title="OutsideDescription | userdefinedfield | Text | Outside - describe in detail.">
                                 [Outside]</label><br>
                         </td>
                     </tr>
                     <tr>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             Unusual features?<br>
                         </td>
-                        <td style="border:1px solid black">
+                        <td style="border: 1px solid black">
                             <label contenteditable="false" data-field-order="37" data-field-class="ui-templatefield"
                                 data-field-id="44" data-field-type="userdefinedfield" title="UnusualFeatures | userdefinedfield | Text | Describe any unusual features in detail.">
                                 [unusual]</label><br>
@@ -1970,13 +1947,13 @@
             </p>
             <p>
             </p>
-            <table border="1" rules="all" id="c483a77c-25ae-6caa-a31e-d04249f28abe" style="width: 100%;">
+            <table border="0" style="width: 100%;width: 100%; border: medium none; border-collapse: collapse;">
                 <colgroup>
                     <col width="100%">
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td>
+                        <td style="border: 1px solid black;">
                             <label contenteditable="false" data-field-order="48" data-field-class="ui-templatefield"
                                 data-field-id="57" data-field-type="userdefinedfield" title="AdverseSaleabilityDetails | userdefinedfield | Text | If there is anything that might effect saleability, please give details.">
                                 [ASaleDetails]</label><br>
@@ -1990,13 +1967,13 @@
             </p>
             <p>
             </p>
-            <table border="1" rules="all" id="da243e3f-ada3-8aa2-4f01-c48f80d7c555" style="width: 100%;">
+            <table border="0" style="width: 100%;border: medium none; border-collapse: collapse;">
                 <colgroup>
                     <col width="100%">
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td>
+                        <td style="border: 1px solid black;">
                             <label contenteditable="false" data-field-order="49" data-field-class="ui-templatefield"
                                 data-field-id="58" data-field-type="userdefinedfield" title="SaleabilityGeneral | userdefinedfield | Text | Please provide any other general comments both POSITIVE and NEGATIVE regarding the saleability of the property">
                                 [GSale]</label><br>

@@ -218,11 +218,11 @@
 .ui-page-content {
     color: Black;
     font-family: Arial,Arial Narrow,sans-serif;
-    font-size: 9pt;
+    font-size: 11pt;
 }
 .ui-page-content p, .ui-page-content a, .ui-page-content b, .ui-page-content strong, .ui-page-content span, .ui-page-content table, .ui-page-content ul, .ui-page-content ol {
     font-family: Arial,Arial Narrow,sans-serif;
-    font-size: 9pt;
+    font-size: 11pt;
 }
 .aloha-table-column-resize-dragger {
     cursor: col-resize;
@@ -235,4 +235,7 @@
     height: 100%;
     position: absolute;
     width: 1px;
+}
+.te-resizegrip {
+    background: none repeat scroll 0 0 #6688EE;	
 }
