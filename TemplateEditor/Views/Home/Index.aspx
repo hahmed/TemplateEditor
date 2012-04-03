@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <br class="clear">
     <div class="ui-page-container ui-page-border ui-page-content">
-        <div class="canvas-updateable mercury-region" id="coverpage-canvas" data-type="editable">
+        <div class="canvas-updateable mercury-region"data-type="editable" id="coverpage-canvas" >
             <br>
             <br>
             <h3 style="text-align: center;">
