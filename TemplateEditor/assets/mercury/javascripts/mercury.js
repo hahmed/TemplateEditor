@@ -126,12 +126,7 @@ window.Mercury = {
         insertLink:            ['Link', 'Insert Link', { modal: 'assets/mercury/views/modals/link.html', regions: ['editable', 'markupable'] }],
         insertMedia:           ['Media', 'Insert Media (images and videos)', { modal: 'assets/mercury/views/modals/media.html', regions: ['editable', 'markupable'] }],
         insertTable:           ['Table', 'Insert Table', { modal: 'assets/mercury/views/modals/table.html', regions: ['editable', 'markupable'] }],
-        insertCharacter:       ['Character', 'Special Characters', { modal: 'assets/mercury/views/modals/character.html', regions: ['editable', 'markupable'] }],
-        snippetPanel:          ['Snippet', 'Snippet Panel', { panel: 'assets/mercury/views/panels/snippets.html' }],
-        sep2:                  ' ',
-        historyPanel:          ['History', 'Page Version History', { panel: 'assets/mercury/views/panels/history.html' }],
-        sep3:                  ' ',
-        notesPanel:            ['Notes', 'Page Notes', { panel: 'assets/mercury/views/panels/notes.html' }]
+        insertCharacter:       ['Character', 'Special Characters', { modal: 'assets/mercury/views/modals/character.html', regions: ['editable', 'markupable'] }]
         },
 
       editable: {
@@ -203,7 +198,8 @@ window.Mercury = {
           },
         editors:               {
           htmlEditor:          ['Edit HTML', 'Edit the HTML content', { regions: ['editable'] }]
-          }
+          },          
+        addTemplateField:           ['Template Field', "Template Fields", { modal: 'assets/mercury/views/modals/tFields.html', regions: ['editable',, 'markupable'] }]
         },
 
       snippetable: {

@@ -52,7 +52,7 @@ namespace TemplateEditor.Controllers
                 wk.GlobalSettings.Margin.Bottom = "2cm";
                 wk.GlobalSettings.Margin.Left = "2cm";
                 wk.GlobalSettings.Margin.Right = "2cm";
-
+                
                 wk.ObjectSettings.Web.EnablePlugins = false;
                 wk.ObjectSettings.Web.EnableJavascript = false;
                 

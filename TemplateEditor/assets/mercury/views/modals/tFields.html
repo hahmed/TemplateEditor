@@ -1,0 +1,33 @@
+<form id="mercury_templateFields" class="mercury-form" style="width: 600px">
+<div class="mercury-display-pane-container">
+    <div class="mercury-display-pane">
+        <fieldset class="inputs" id="link_text_container">
+            <ol>
+                <li id="link_text_input" class="string input optional stringish">
+                    <label class="label" for="link_text">
+                        Text</label>
+                    <input id="link_text" name="link[text]" type="text" />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset class="inputs" id="tf_search">
+            <ol>
+                <li id="search_text_input" class="string input optional stringish">
+                    <label class="label" for="search_field">
+                        Search</label>
+                    <input id="search_field" name="search[text]" type="text" />
+                    <input id="btnFilter" type="button" value="Filter" name="FieldFilter" class="commit" />
+                </li>
+            </ol>
+        </fieldset>
+    </div>
+</div>
+<div class="mercury-display-controls">
+    <fieldset class="buttons">
+        <ol>
+            <li class="commit button">
+                <input class="submit" name="commit" type="submit" value="Insert Field" /></li>
+        </ol>
+    </fieldset>
+</div>
+</form>
