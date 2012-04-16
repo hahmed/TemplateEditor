@@ -151,12 +151,12 @@
 
 });
 
-jQuery("#mercury_templateFields")
-
-Mercury.PageEditor.prototype.addField = function() {
-
+jQuery("#btnFilter").live("click", function() {
     Mercury.log('addField', "----------------------------->");
+    var fieldsUrl = jQuery("meta[name=getFieldsUrl]").attr("content");
 
-    //1. load up a modal or view?
-    //2. add
-};
+    //make ajax call and retrieve fields...
+    
+    //append fields to fieldset
+
+});

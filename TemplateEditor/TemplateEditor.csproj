@@ -1634,7 +1634,6 @@
     <Content Include="assets\mercury\views\palettes\forecolor.html" />
     <Content Include="assets\mercury\views\panels\history.html" />
     <Content Include="assets\mercury\views\panels\notes.html" />
-    <Content Include="assets\mercury\views\panels\snippets.html" />
     <Content Include="assets\mercury\views\selects\formatblock.html" />
     <Content Include="assets\mercury\views\selects\style.html" />
     <Content Include="assets\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -1758,6 +1757,9 @@
     <None Include="assets\mercury\views\snippets\example\options.html.erb" />
     <None Include="assets\mercury\views\snippets\example\preview.html.erb" />
     <None Include="lib\test.xhtml" />
+    <Content Include="assets\mercury\images\addField.png" />
+    <Content Include="assets\mercury\javascripts\mercury_overrides.js" />
+    <Content Include="assets\mercury\views\modals\tFields.html" />
     <Content Include="lib\Common.Logging.dll" />
     <Content Include="lib\WkHtmlToXSharp.dll" />
     <Content Include="Views\Shared\AlohaSite.Master" />

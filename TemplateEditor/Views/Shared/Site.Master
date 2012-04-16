@@ -4,19 +4,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>
-        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" /> <%= Url.Action("GetFields","Home") %>
     </title>
+    <meta name="getFieldsUrl" content="<%= Url.Action("GetFields","Home") %>" />
+    <meta name="csrf-token" content='' />
     <link href="../../assets/css/Site.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="../../assets/js/jquery-1.7.1.min.js"></script>
 
     <script type="text/javascript" src="../../assets/js/colresizer.js"></script>
+
     <script type="text/javascript" src="../../assets/mercury/javascripts/mercury_tables.js"></script>
 
     <script type="text/javascript" src="../../assets/mercury/javascripts/mercury_loader.js"></script>
 
 </head>
-<body data-fields-url="/templatemanager/getfields">
+<body>
     <asp:ContentPlaceHolder ID="MainContent" runat="server">
     </asp:ContentPlaceHolder>
 </body>

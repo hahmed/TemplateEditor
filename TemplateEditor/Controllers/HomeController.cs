@@ -132,5 +132,10 @@ namespace TemplateEditor.Controllers
             return returnCode == 0 ? file : null;
         }
 
+
+        public ActionResult GetFields()
+        {
+            return Json("something real");
+        }
     }
 }
