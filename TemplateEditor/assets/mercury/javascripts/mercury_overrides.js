@@ -10,16 +10,18 @@
             Mercury.log('field selection', selection);
 
             if (selection && selection.commonAncestor) {
-                container = selection.commonAncestor(true).closest('a');
+                container = selection.commonAncestor(true).closest('label');
 
             }
             if (container && container.length) {
 
                 existingLink = container;
                 this.element.find('#link_text_container').hide();
-                if (container.attr('href') && container.attr('href').indexOf('#') === 0) {
+                if (container.attr('data-field-id') && container.attr('data-field-id').indexOf('#') === 0) {
+                    //field already exists, show field id and field name...
                     bookmarkSelect.val(container.attr('href').replace(/[^#]*#/, ''));
                     bookmarkSelect.prev('label').find('input[type=radio]').prop("checked", true);
+                
                 } else {
                     this.element.find('#link_external_url').val(container.attr('href'));
                 }
@@ -79,13 +81,13 @@
 
             content = _this.element.find('#link_text').val();
             target = _this.element.find('#link_target').val();
-            type = _this.element.find('input[name=link_field]:checked').val();
+            type = _this.element.find('input[name=link_field]:checked');
 
-            attrs['field-id'] = _this.element.find('input[name=link_field]:checked').val();
-            attrs['field-name'] = _this.element.find('input[name=link_field]:checked').data("field-name");
+            attrs['data-field-id'] = type.val();
+            attrs['data-field-name'] = type.data("field-name");
 
             value = {
-                tagName: 'span',
+                tagName: 'label',
                 attrs: attrs,
                 content: content
             };
@@ -224,6 +226,26 @@
 
     //}).call(this);
 
+    Mercury.Regions.Editable.actions.insertField = function(selection, options) {
+        Mercury.log('insertFieldAction', "you called me...");
+
+        var anchor;
+        anchor = jQuery("<" + options.value.tagName + ">", this.document).attr(options.value.attrs).html(options.value.content);
+        return selection.insertNode(anchor);
+    };
+
+    Mercury.Regions.Editable.actions.replaceField = function(selection, options) {
+        Mercury.log('replaceFieldAction', "you called me...");
+        var anchor, html;
+        anchor = jQuery("<" + options.value.tagName + ">", this.document).attr(options.value.attrs).html(options.value.content);
+        selection.selectNode(options.node);
+        html = jQuery('<div>').html(selection.content()).find('label').html();
+        return selection.replace(jQuery(anchor, selection.context).html(html));
+    };
 });
+
+
+
+
 
 

@@ -30,8 +30,6 @@ namespace TemplateEditor.Controllers
 
         public ActionResult GetMePDF()
         {
-            var url = "http://stackoverflow.com/questions/1331926/calling-wkhtmltopdf-to-generate-pdf-from-html";
-
             var buffer = GetMyPdf();
 
             return File(buffer, "application/pdf");
