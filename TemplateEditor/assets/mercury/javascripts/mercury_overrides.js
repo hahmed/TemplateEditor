@@ -2,7 +2,7 @@
     Mercury.saveUrl = jQuery("meta[name=saveurl]").attr("content");
 
     Mercury.modalHandlers.addTemplateField = function() {
-        var bookmarkSelect, container, existingLink, href, link, newBookmarkInput, selection, _i, _len, _ref, _this = this;
+        var bookmarkSelect, container, existingLink, selection, _this = this;
 
         if (Mercury.region && Mercury.region.selection) {
             selection = Mercury.region.selection();
@@ -56,13 +56,12 @@
                         //iterate over result and display inside the modal
                         for (var prop in data.Fields) {
 
-                            var uidata = jQuery("<label class='label'><input type='radio' checked='' value='fieldid_" + prop + "' name='link_field' data-field-name='" + data.Fields[prop] + "'>" + data.Fields[prop] + "</label>");
+                            var uidata = jQuery("<label class='label'><input type='radio' checked='' value='" + prop + "' name='link_field' data-field-name='" + data.Fields[prop] + "'>" + data.Fields[prop] + "</label>");
                             $("#tf_search").find("#tfields_container").append(uidata);
                         }
                         //resize modal so the fields fit...
                         _this.resize(true);
-                    }
-                    catch (err) {
+                    } catch (err) {
                         Mercury.log('findFieldError', err);
                     }
                 } // end on success
@@ -71,57 +70,41 @@
         });
 
         return this.element.find('form').on('submit', function(event) {
-            var args, attrs, content, target, type, value;
+            var attrs = {}, content, target, type, value;
             event.preventDefault();
+            //what do I need to set?
+            //#1 - id
+            //#2 - field name
+            //#3 - add a span or amend span
+
             content = _this.element.find('#link_text').val();
             target = _this.element.find('#link_target').val();
             type = _this.element.find('input[name=link_field]:checked').val();
-            switch (type) {
-                case 'existing_bookmark':
-                    attrs = {
-                        href: "#" + (_this.element.find('#link_existing_bookmark').val())
-                    };
-                    break;
-                case 'new_bookmark':
-                    attrs = {
-                        name: "" + (_this.element.find('#link_new_bookmark').val())
-                    };
-                    break;
-                default:
-                    attrs = {
-                        href: _this.element.find("#link_" + type).val()
-                    };
-            }
-            switch (target) {
-                case 'popup':
-                    args = {
-                        width: parseInt(_this.element.find('#link_popup_width').val()) || 500,
-                        height: parseInt(_this.element.find('#link_popup_height').val()) || 500,
-                        menubar: 'no',
-                        toolbar: 'no'
-                    };
-                    attrs['href'] = "javascript:void(window.open('" + attrs['href'] + "', 'popup_window', '" + (jQuery.param(args).replace(/&/g, ',')) + "'))";
-                    break;
-                default:
-                    if (target) attrs['target'] = target;
-            }
+
+            attrs['field-id'] = _this.element.find('input[name=link_field]:checked').val();
+            attrs['field-name'] = _this.element.find('input[name=link_field]:checked').data("field-name");
+
             value = {
-                tagName: 'a',
+                tagName: 'span',
                 attrs: attrs,
                 content: content
             };
+
+            //do the work...
             if (existingLink) {
                 Mercury.trigger('action', {
-                    action: 'replaceLink',
+                    action: 'replaceField',
                     value: value,
                     node: existingLink.get(0)
                 });
             } else {
                 Mercury.trigger('action', {
-                    action: 'insertLink',
+                    action: 'insertField',
                     value: value
                 });
             }
+
+            //hide modal
             return _this.hide();
         });
     };
@@ -242,3 +225,5 @@
     //}).call(this);
 
 });
+
+
