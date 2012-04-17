@@ -50,12 +50,13 @@
                     try {
                         if (data.Error)
                             throw "data is empty";
-                        
+
                         //empty current fields
                         $("#tf_search").find("#tfields_container").html("");
                         //iterate over result and display inside the modal
                         for (var prop in data.Fields) {
-                            var uidata = jQuery("<div data-key='" + prop + "'>" + data.Fields[prop] + "</div>");
+
+                            var uidata = jQuery("<label class='label'><input type='radio' checked='' value='fieldid_" + prop + "' name='link_field' data-field-name='" + data.Fields[prop] + "'>" + data.Fields[prop] + "</label>");
                             $("#tf_search").find("#tfields_container").append(uidata);
                         }
                         //resize modal so the fields fit...
@@ -64,11 +65,64 @@
                     catch (err) {
                         Mercury.log('findFieldError', err);
                     }
-                } // end on sucess
+                } // end on success
             }); // end ajax call
 
-            //append fields to fieldset
+        });
 
+        return this.element.find('form').on('submit', function(event) {
+            var args, attrs, content, target, type, value;
+            event.preventDefault();
+            content = _this.element.find('#link_text').val();
+            target = _this.element.find('#link_target').val();
+            type = _this.element.find('input[name=link_field]:checked').val();
+            switch (type) {
+                case 'existing_bookmark':
+                    attrs = {
+                        href: "#" + (_this.element.find('#link_existing_bookmark').val())
+                    };
+                    break;
+                case 'new_bookmark':
+                    attrs = {
+                        name: "" + (_this.element.find('#link_new_bookmark').val())
+                    };
+                    break;
+                default:
+                    attrs = {
+                        href: _this.element.find("#link_" + type).val()
+                    };
+            }
+            switch (target) {
+                case 'popup':
+                    args = {
+                        width: parseInt(_this.element.find('#link_popup_width').val()) || 500,
+                        height: parseInt(_this.element.find('#link_popup_height').val()) || 500,
+                        menubar: 'no',
+                        toolbar: 'no'
+                    };
+                    attrs['href'] = "javascript:void(window.open('" + attrs['href'] + "', 'popup_window', '" + (jQuery.param(args).replace(/&/g, ',')) + "'))";
+                    break;
+                default:
+                    if (target) attrs['target'] = target;
+            }
+            value = {
+                tagName: 'a',
+                attrs: attrs,
+                content: content
+            };
+            if (existingLink) {
+                Mercury.trigger('action', {
+                    action: 'replaceLink',
+                    value: value,
+                    node: existingLink.get(0)
+                });
+            } else {
+                Mercury.trigger('action', {
+                    action: 'insertLink',
+                    value: value
+                });
+            }
+            return _this.hide();
         });
     };
 
