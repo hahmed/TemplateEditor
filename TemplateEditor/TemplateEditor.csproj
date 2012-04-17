@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.ComponentModel.DataAnnotations">
@@ -1761,6 +1762,7 @@
     <Content Include="assets\mercury\javascripts\mercury_overrides.js" />
     <Content Include="assets\mercury\views\modals\tFields.html" />
     <Content Include="lib\Common.Logging.dll" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
     <Content Include="lib\WkHtmlToXSharp.dll" />
     <Content Include="Views\Shared\AlohaSite.Master" />
     <Content Include="Views\Shared\Site.Master" />

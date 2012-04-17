@@ -1,7 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using System.Text;
+using System.Web;
 using System.Web.Mvc;
+using Newtonsoft.Json;
 using TemplateEditor.Models;
 using WkHtmlToXSharp;
 
@@ -52,10 +57,10 @@ namespace TemplateEditor.Controllers
                 wk.GlobalSettings.Margin.Bottom = "2cm";
                 wk.GlobalSettings.Margin.Left = "2cm";
                 wk.GlobalSettings.Margin.Right = "2cm";
-                
+
                 wk.ObjectSettings.Web.EnablePlugins = false;
                 wk.ObjectSettings.Web.EnableJavascript = false;
-                
+
                 using (var stream = new MemoryStream(ReadHtmlFromFile(@"C:\Projects\devnet\TemplateEditor\TemplateEditor\lib\test.xhtml")))
                 using (var sr = new StreamReader(stream))
                 {
@@ -133,9 +138,81 @@ namespace TemplateEditor.Controllers
         }
 
 
-        public ActionResult GetFields()
+        public ActionResult GetFields(string fieldName)
         {
-            return Json("something real");
+            var list = new Dictionary<int, string>
+                           {
+                               {1, "something"},
+                               {22, "anotherThing"},
+                               {154, "someField"},
+                               {65, "MyField"},
+                               {74845, "NoField"}
+                           };
+
+
+            var obj = new
+                          {
+                              Error = false,
+                              Fields = list.Where(x=> x.Value.Contains(fieldName)).ToDictionary(x=> x.Key,y=> y.Value)
+                          };
+
+            var jsonNetResult = new JsonNetResult {Data = obj};
+
+            return jsonNetResult;
         }
     }
+
+
+    public class JsonNetResult : ActionResult
+    {
+
+        public Encoding ContentEncoding { get; set; }
+
+        public string ContentType { get; set; }
+
+        public object Data { get; set; }
+
+        public JsonSerializerSettings SerializerSettings { get; set; }
+
+        public Formatting Formatting { get; set; }
+
+
+        public JsonNetResult()
+        {
+
+            SerializerSettings = new JsonSerializerSettings();
+
+        }
+
+        public override void ExecuteResult(ControllerContext context)
+        {
+
+            if (context == null)
+
+                throw new ArgumentNullException("context");
+
+            HttpResponseBase response = context.HttpContext.Response;
+
+            response.ContentType = !string.IsNullOrEmpty(ContentType) 
+                                       ? ContentType 
+                                       : "application/json";
+
+            if (ContentEncoding != null)
+                response.ContentEncoding = ContentEncoding;
+
+            if (Data == null) 
+                return; //return error = true?
+
+            JsonTextWriter writer = new JsonTextWriter(response.Output) { Formatting = Formatting };
+
+            JsonSerializer serializer = JsonSerializer.Create(SerializerSettings);
+
+            serializer.Serialize(writer, Data);
+
+            writer.Flush();
+        }
+
+    }
+
+
 }

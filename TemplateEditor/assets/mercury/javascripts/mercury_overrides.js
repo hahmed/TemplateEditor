@@ -2,8 +2,7 @@
     Mercury.saveUrl = jQuery("meta[name=saveurl]").attr("content");
 
     Mercury.modalHandlers.addTemplateField = function() {
-        var bookmarkSelect, container, existingLink, href, link, newBookmarkInput, selection, _i, _len, _ref,
-      _this = this;
+        var bookmarkSelect, container, existingLink, href, link, newBookmarkInput, selection, _i, _len, _ref, _this = this;
 
         if (Mercury.region && Mercury.region.selection) {
             selection = Mercury.region.selection();
@@ -31,7 +30,46 @@
             }
         }
 
+        jQuery("#btnFilter").click(function() {
+            var fieldsUrl, fieldName;
+            fieldsUrl = jQuery("meta[name=getFieldsUrl]").attr("content");
+            fieldName = jQuery("#tf_search #search_field").val();
+            Mercury.log('findField', "------> " + fieldsUrl);
 
+            //make ajax call and retrieve fields...
+            jQuery.ajax({
+                url: fieldsUrl,
+                type: "POST",
+                data: { fieldName: fieldName },
+                error: function(xhr, status, error) {
+                    // you may need to handle me if the json is invalid
+                    // this is the ajax object
+                    Mercury.log('findFieldError', error);
+                },
+                success: function(data) {
+                    try {
+                        if (data.Error)
+                            throw "data is empty";
+                        
+                        //empty current fields
+                        $("#tf_search").find("#tfields_container").html("");
+                        //iterate over result and display inside the modal
+                        for (var prop in data.Fields) {
+                            var uidata = jQuery("<div data-key='" + prop + "'>" + data.Fields[prop] + "</div>");
+                            $("#tf_search").find("#tfields_container").append(uidata);
+                        }
+                        //resize modal so the fields fit...
+                        _this.resize(true);
+                    }
+                    catch (err) {
+                        Mercury.log('findFieldError', err);
+                    }
+                } // end on sucess
+            }); // end ajax call
+
+            //append fields to fieldset
+
+        });
     };
 
     //    Mercury.modalHandlers.insertLink = function() {
@@ -148,15 +186,5 @@
     //  };
 
     //}).call(this);
-
-});
-
-jQuery("#btnFilter").live("click", function() {
-    Mercury.log('addField', "----------------------------->");
-    var fieldsUrl = jQuery("meta[name=getFieldsUrl]").attr("content");
-
-    //make ajax call and retrieve fields...
-    
-    //append fields to fieldset
 
 });
