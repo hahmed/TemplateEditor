@@ -1,8 +1,16 @@
-﻿jQuery(window).bind('mercury:ready', function() {
+﻿// check 0-9 digit
+function regIsDigit(fData) {
+    var reg = new RegExp("^[0-9]$");
+    return (reg.test(fData));
+}
+
+jQuery(window).bind('mercury:ready', function() {
     Mercury.saveUrl = jQuery("meta[name=saveurl]").attr("content");
 
     Mercury.modalHandlers.addTemplateField = function() {
-        var bookmarkSelect, container, existingLink, selection, _this = this;
+        var fieldSelect, container, existingLink, selection, _this = this;
+
+        fieldSelect = this.element.find('#tf_currentField');
 
         if (Mercury.region && Mercury.region.selection) {
             selection = Mercury.region.selection();
@@ -15,13 +23,18 @@
             }
             if (container && container.length) {
 
+
                 existingLink = container;
                 this.element.find('#link_text_container').hide();
-                if (container.attr('data-field-id') && container.attr('data-field-id').indexOf('#') === 0) {
+
+                if (container.attr('data-field-id') && regIsDigit(container.attr('data-field-id'))) {
+                    Mercury.log('fieldExists', container.attr('data-field-id'));
+
+                    jQuery("#tf_currentField").show();
                     //field already exists, show field id and field name...
-                    bookmarkSelect.val(container.attr('href').replace(/[^#]*#/, ''));
-                    bookmarkSelect.prev('label').find('input[type=radio]').prop("checked", true);
-                
+                    fieldSelect.find("#tf_current_id").text(container.attr('data-field-id'));
+                    fieldSelect.find("#tf_current_name").text(container.attr('data-field-name'));
+
                 } else {
                     this.element.find('#link_external_url').val(container.attr('href'));
                 }
