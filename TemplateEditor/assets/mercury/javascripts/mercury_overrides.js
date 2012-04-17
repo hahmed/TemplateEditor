@@ -1,10 +1,4 @@
-﻿// check 0-9 digit
-function regIsDigit(fData) {
-    var reg = new RegExp("^[0-9]$");
-    return (reg.test(fData));
-}
-
-jQuery(window).bind('mercury:ready', function() {
+﻿jQuery(window).bind('mercury:ready', function() {
     Mercury.saveUrl = jQuery("meta[name=saveurl]").attr("content");
 
     Mercury.modalHandlers.addTemplateField = function() {
@@ -27,7 +21,7 @@ jQuery(window).bind('mercury:ready', function() {
                 existingLink = container;
                 this.element.find('#link_text_container').hide();
 
-                if (container.attr('data-field-id') && regIsDigit(container.attr('data-field-id'))) {
+                if (container.attr('data-field-id') && container.attr('data-field-id').length > 0) {
                     Mercury.log('fieldExists', container.attr('data-field-id'));
 
                     jQuery("#tf_currentField").show();
