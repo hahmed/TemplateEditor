@@ -1,13 +1,9 @@
-﻿//jQuery(window).bind('mercury:ready', function() {
-//    Mercury.saveUrl = '/content';
-//    console.debug("resize me ------------------->");
-//});
-
+﻿
 var onSampleResized = function(e) {
     var table = jQuery(e.currentTarget); //reference to the resized table
 };
 
-$("table").live("click", function(e) {
+$("table").on("click", function(e) {
     $(this).colResizable({
         liveDrag: true,
         gripInnerHtml: "<div class='te-resizegrip'></div>",
@@ -17,7 +13,7 @@ $("table").live("click", function(e) {
 });
 
 $("table").bind("table_recalc", function(event, params) {
-    //doSomethingKickAss(params);
+
     console.debug("recalc table................");
 });
 
