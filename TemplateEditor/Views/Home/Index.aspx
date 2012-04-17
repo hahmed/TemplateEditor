@@ -1943,7 +1943,8 @@
                 </tbody>
             </table>
             <p>
-                If you have answered <b>YES</b> please provide a full explanation:<br class="GENTICS_ephemera">
+                If you have answered <b>YES</b> please provide a full explanation: of what you can please provide a full explanation: of what you canplease provide a full explanation: of what you canplease provide a full explanation: of what you canplease provide a full explanation: of what you can
+                please provide a full explanation: of what you canplease provide a full explanation: of what you canplease provide a full explanation: of what you canplease provide a full explanation: of what you canplease provide a full explanation: of what you canplease provide a full explanation: of what you canplease provide a full explanation: of what you can<br class="GENTICS_ephemera">
             </p>
             <p>
             </p>

@@ -35,6 +35,7 @@ namespace TemplateEditor.Controllers
         private MultiplexingConverter _GetConverter()
         {
             var obj = new MultiplexingConverter();
+            
             //obj.Begin += (s, e) => _Log.DebugFormat("Conversion begin, phase count: {0}", e.Value);
             //obj.Error += (s, e) => _Log.Error(e.Value);
             //obj.Warning += (s, e) => _Log.Warn(e.Value);
@@ -52,6 +53,7 @@ namespace TemplateEditor.Controllers
                 wk.GlobalSettings.Margin.Bottom = "2cm";
                 wk.GlobalSettings.Margin.Left = "2cm";
                 wk.GlobalSettings.Margin.Right = "2cm";
+                wk.GlobalSettings.Size.PageSize = PdfPageSize.A4;
 
                 wk.ObjectSettings.Web.EnablePlugins = false;
                 wk.ObjectSettings.Web.EnableJavascript = false;

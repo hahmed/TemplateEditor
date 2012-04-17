@@ -1,3 +1,4 @@
 <Modules>
   <Module PersistentId="5818C1DA-0FFB-494A-8448-BBEF37F3B378" ModuleId="TemplateEditor" />
+  <Module PersistentId="WkHtmlToXSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=bc70fce929bf608f" ModuleId="WkHtmlToXSharp" />
 </Modules>

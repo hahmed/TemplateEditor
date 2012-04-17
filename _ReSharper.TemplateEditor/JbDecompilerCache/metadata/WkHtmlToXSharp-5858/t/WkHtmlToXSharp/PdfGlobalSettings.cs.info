@@ -1,0 +1,12 @@
+﻿Code version: 6.1.37.86
+Assembly name WkHtmlToXSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=bc70fce929bf608f mvid {b1510bd5-ecb0-4501-a43d-666c3330d2b8}
+* ref mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {b2dd7fad-f33e-483a-8e08-5d9b09c1f0fb}
+* ref System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {fa32f5ae-6217-44a5-a3ce-fdeb5c4a66b8}
+* ref Common.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e
+  mvid {db672bcf-346f-4409-bfeb-16c4cfea696e}
+* ref System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {1ece5c33-ce63-4e5f-876e-7a1e97f239e1}
+* ref System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  mvid {3a8a27cd-d4d5-4de6-9957-ea80148f9a0d}
