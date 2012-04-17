@@ -17,7 +17,6 @@
             }
             if (container && container.length) {
 
-
                 existingLink = container;
                 this.element.find('#link_text_container').hide();
 
