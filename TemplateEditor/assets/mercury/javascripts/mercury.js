@@ -354,10 +354,11 @@ window.Mercury = {
         // This is a nice way to add functionality, when the behaviors aren't region specific.  These can be triggered by a
         // button, or manually with `Mercury.trigger('action', {action: 'barrelRoll'})`
         globalBehaviors: {
-            exit: function() { window.location.href = this.iframeSrc() },
-            barrelRoll: function() { $('body').css({ webkitTransform: 'rotate(360deg)' }) }
+            exit: function() { window.location.href = this.iframeSrc(); },
+            barrelRoll: function() { $('body').css({ webkitTransform: 'rotate(360deg)' }); },
+            disableTable: function(param) {Mercury.log("what object called me: ", $(param));jQuery(param).colResizable({ disable: true });},
+            enableTable: function(param) {Mercury.log("what object called me: ", $(param));jQuery(param).colResizable({liveDrag: false,draggingClass: "dragging"});}
         },
-
 
         // ## Ajax and CSRF Headers
         //
@@ -17274,18 +17275,20 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                     },
                     insertColumnBefore: function(selection) {
                         Mercury.log("my table....", Mercury.tableEditor.currentTable());
+                        jQuery("body").trigger('table_recalc');
+
                         var result = Mercury.tableEditor.addColumn('before');
-                        jQuery(Mercury.tableEditor.currentTable()).trigger("table_reset");
+                        //Mercury.PageEditor.prototype.EnableTable(Mercury.tableEditor.currentTable());
                         return result;
                     },
                     insertColumnAfter: function() {
                         var result = Mercury.tableEditor.addColumn('after');
-                        jQuery(Mercury.tableEditor.currentTable()).trigger("table_reset");
+                        jQuery(document).trigger("table_recalc", [Mercury.tableEditor.currentTable()]);
                         return result;
                     },
                     deleteColumn: function() {
                         var result = Mercury.tableEditor.removeColumn();
-                        jQuery(Mercury.tableEditor.currentTable()).trigger("table_reset");
+                        jQuery(Mercury.tableEditor.currentTable()).trigger("table_recalc");
                         return result;
                     },
                     deleteRow: function() {
