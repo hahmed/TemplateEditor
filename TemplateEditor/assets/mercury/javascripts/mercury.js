@@ -19168,12 +19168,12 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                     });
                 });
                 return this.element.find('form').on('submit', function(event) {
-                    var html, value;//, totalCols, i, colWrapper, meanWidth;
+                    var html, value; //, totalCols, i, colWrapper, meanWidth;
                     event.preventDefault();
 
                     //@haroon - here add my table styles...
 
-                    table.css("width", "100%");
+                    table.css("width", "100%").addClass("te-tablerenderer");
                     //add cols and width for each cols in %
                     //width of col can be calulated by: total width of table= 170mm/ total cols
                     //totalCols = table.find("tr:first td").length;
