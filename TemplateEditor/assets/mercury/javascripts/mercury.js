@@ -17275,18 +17275,18 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                     insertColumnBefore: function(selection) {
                         Mercury.log("my table....", Mercury.tableEditor.currentTable());
                         var result = Mercury.tableEditor.addColumn('before');
-                        //fire event
+                        jQuery(Mercury.tableEditor.currentTable()).trigger("table_reset");
                         return result;
                     },
                     insertColumnAfter: function() {
-                    var result =  Mercury.tableEditor.addColumn('after');
-                    //fire event
-                    return result;
+                        var result = Mercury.tableEditor.addColumn('after');
+                        jQuery(Mercury.tableEditor.currentTable()).trigger("table_reset");
+                        return result;
                     },
                     deleteColumn: function() {
-                    var result = Mercury.tableEditor.removeColumn();
-                    //fire event
-                    return result;
+                        var result = Mercury.tableEditor.removeColumn();
+                        jQuery(Mercury.tableEditor.currentTable()).trigger("table_reset");
+                        return result;
                     },
                     deleteRow: function() {
                         return Mercury.tableEditor.removeRow();

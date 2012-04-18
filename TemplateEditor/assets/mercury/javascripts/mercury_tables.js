@@ -66,7 +66,7 @@ $("table").bind("table_recalc", function(event, params) {
             e.preventDefault();
             Mercury.log("what object is this: ", $(selector) + " event: " + e);
             var position = $(this).position();
-            $(wrapper).find(".te-table-column-resize-guide").css("top", position.top).css("left", position.left).css("height",$(selector).height()).show();
+            $(wrapper).find(".te-table-column-resize-guide").css("top", position.top).css("left", position.left).css("height", $(selector).height()).show();
         });
 
         $(".te-table-column-resize-dragger").live("mouseup", function(e) {
@@ -98,14 +98,17 @@ var onSampleResized = function(e) {
     var table = jQuery(e.currentTarget); //reference to the resized table
 };
 
-$("table").live("click", function(e) {
-    //    $(this).colResizable({
-    //        liveDrag: true,
-    //        gripInnerHtml: "<div class='te-resizegrip'></div>",
-    //        draggingClass: "dragging",
-    //        onResize: onSampleResized
-    //    });
-    jQuery(this).setupTables();
-
+jQuery("table").live("click", function(e) {
+    jQuery(this).colResizable({
+        liveDrag: false,
+        draggingClass: "dragging",
+        onResize: onSampleResized
+    });
 });
+
+jQuery("table").bind("table_reset", function(e) {
+    Mercury.log("what object called: ", jQuery(this));
+});
+
+
 
