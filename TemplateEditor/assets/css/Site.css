@@ -246,3 +246,7 @@
 .te-resizegrip {
     background: none repeat scroll 0 0 #6688EE;	
 }
+.te-tablerenderer {
+    border: medium none;
+    border-collapse: collapse;
+}
