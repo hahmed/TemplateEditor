@@ -17323,19 +17323,10 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                         });
                     },
                     insertTable: function(selection, options) {
-                        console.debug("@haroon ------------------->");
-                        var wrapper, resizeHandlers;
-                        //add wrapper + resize handlers
-                        wrapper = jQuery("<div class='ve-table'>")
-              .css("width", "170mm")
-              .html(options.value);
-
-                        //now how can I add sliders as handlers to help me resize this 
-                        resizeHandlers = jQuery("<div class='te-resize-handlers'>")
-              .append("<div class='te-table-column-resize-dragger' style='top: 0px; left: 0px;'>")
-              .append("<div class='te-table-column-resize-guide' style='top: 0px; left: 0px; display: none;'>");
-
-                        jQuery(wrapper).append(resizeHandlers);
+                        //console.debug("@hahmed ------------------->");
+                        var wrapper = jQuery("<div class='te-table'>")
+                          .css("width", "170mm")
+                          .html(options.value);
 
                         return this.execCommand('insertHTML', {
                             value: wrapper//options.value
@@ -17945,15 +17936,10 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                 return this.content(this.history.redo());
             },
             insertHTML: function(selection, options) {
-
-                //todo: haroon, override this behaviour
-                //I want to add my own wrapper around this that will
                 var element;
                 if (options.value.get && (element = options.value.get(0))) {
-                    console.debug("do something with this now....................................");
                     options.value = jQuery('<div>').html(element).html();
                 }
-                console.debug("do something with this now------------------------------");
                 return selection.replace(options.value, false, true);
             },
             insertImage: function(selection, options) {
@@ -19182,7 +19168,7 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                     });
                 });
                 return this.element.find('form').on('submit', function(event) {
-                    var html, value, totalCols, i, colWrapper, meanWidth;
+                    var html, value;//, totalCols, i, colWrapper, meanWidth;
                     event.preventDefault();
 
                     //@haroon - here add my table styles...
@@ -19190,17 +19176,17 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                     table.css("width", "100%");
                     //add cols and width for each cols in %
                     //width of col can be calulated by: total width of table= 170mm/ total cols
-                    totalCols = table.find("tr:first td").length;
+                    //totalCols = table.find("tr:first td").length;
                     //170mm - total width of table (wrapper)
-                    meanWidth = (100 / totalCols) + "%";
-                    colWrapper = $("<colgroup>");
-                    for (i = 0; i < totalCols; i++) {
-                        $(colWrapper).append("<col width='" + meanWidth + "'>");
-                    }
+                    //meanWidth = (100 / totalCols) + "%";
+                    //colWrapper = $("<colgroup>");
+                    //for (i = 0; i < totalCols; i++) {
+                    //    $(colWrapper).append("<col width='" + meanWidth + "'>");
+                    //}
 
                     //console.debug(colWrapper);
 
-                    table.prepend(colWrapper);
+                    //table.prepend(colWrapper);
                     //console.debug("total rows: " + totalCols);
 
                     table.find('.selected').removeAttr('class');

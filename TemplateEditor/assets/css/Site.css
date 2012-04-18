@@ -224,13 +224,20 @@
     font-family: Arial,Arial Narrow,sans-serif;
     font-size: 11pt;
 }
-.aloha-table-column-resize-dragger {
+.te-table-column-resize-dragger {
     cursor: col-resize;
     height: 100%;
     position: absolute;
     width: 7px;
 }
-.aloha-table-column-resize-guide {
+.te-table-column-resize-dragger-dragging {
+    cursor: col-resize;
+    height: 100%;
+    position: absolute;
+    width: 7px;
+	margin-left: -3px;
+}
+.te-table-column-resize-guide {
     background: none repeat scroll 0 0 #6688EE;
     height: 100%;
     position: absolute;
