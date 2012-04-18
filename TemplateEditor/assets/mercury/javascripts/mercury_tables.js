@@ -69,6 +69,13 @@ $("table").bind("table_recalc", function(event, params) {
             $(wrapper).find(".te-table-column-resize-guide").css("top", position.top).css("left", position.left).css("height",$(selector).height()).show();
         });
 
+        $(".te-table-column-resize-dragger").live("mouseup", function(e) {
+            //prevent browser from adding some sort of cursor - mozilla does this
+            e.preventDefault();
+            Mercury.log("mouseup: ", $(selector) + " event: " + e);
+            $(wrapper).find(".te-table-column-resize-guide").hide();
+        });
+
     }
 
     $.fn.setupTables = function() {

@@ -13995,6 +13995,9 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                 this.columnCount = this.getColumnCount();
                 return this.rowCount = this.getRowCount();
             },
+            currentTable: function() {
+                return this.table;
+            },
             addColumn: function(position) {
                 var i, intersecting, matchOptions, matching, newCell, row, rowSpan, sig, _len, _ref, _results;
                 if (position == null) position = 'after';
@@ -17269,14 +17272,21 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                     insertRowAfter: function() {
                         return Mercury.tableEditor.addRow('after');
                     },
-                    insertColumnBefore: function() {
-                        return Mercury.tableEditor.addColumn('before');
+                    insertColumnBefore: function(selection) {
+                        Mercury.log("my table....", Mercury.tableEditor.currentTable());
+                        var result = Mercury.tableEditor.addColumn('before');
+                        //fire event
+                        return result;
                     },
                     insertColumnAfter: function() {
-                        return Mercury.tableEditor.addColumn('after');
+                    var result =  Mercury.tableEditor.addColumn('after');
+                    //fire event
+                    return result;
                     },
                     deleteColumn: function() {
-                        return Mercury.tableEditor.removeColumn();
+                    var result = Mercury.tableEditor.removeColumn();
+                    //fire event
+                    return result;
                     },
                     deleteRow: function() {
                         return Mercury.tableEditor.removeRow();
