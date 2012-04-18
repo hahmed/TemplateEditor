@@ -26,7 +26,7 @@
                 <br class="GENTICS_ephemera">
             </p>
             <div class="te-table">
-                <table style="width: 170mm; text-align: left;">
+                <table style="width: 170mm;" class="te-tablerenderer">
                     <tbody style="text-align: left;">
                         <tr style="text-align: left;" class="">
                             <td class="aloha-table-selectrow" style="width: 10px;">
@@ -428,7 +428,7 @@
             </h6>
             <p>
             </p>
-            <table border="1" rules="all" id="bc7132f1-9a85-a177-dced-4d403f1acf28" style="width: 100%;">
+            <table class="te-tablerenderer" style="width: 100%;">
                 <colgroup>
                     <col width="100%">
                 </colgroup>

@@ -55,7 +55,7 @@ $("table").bind("table_recalc", function(event, params) {
 
     function attachResizeHandlers(selector, wrapper) {
 
-        $(selector).find("tr:first td").live("hover", function(e) {
+        $(selector).find("tr:first td").live("mouseover", function(e) {
             Mercury.log("what object is this: ", $(selector) + " event: " + e);
             var position = $(this).position();
             $(wrapper).find(".te-table-column-resize-dragger").css("top", position.top).css("left", position.left);
