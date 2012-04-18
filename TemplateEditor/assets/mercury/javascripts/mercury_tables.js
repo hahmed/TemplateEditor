@@ -54,7 +54,7 @@ $("table").bind("table_recalc", function(event, params) {
     //if you hover over any td within the first row, set the position of the resize handler to that td
 
     function attachResizeHandlers(selector, wrapper) {
-        
+
         $(selector).find("tr:first td").live("hover", function(e) {
             Mercury.log("what object is this: ", $(selector) + " event: " + e);
             var position = $(this).position();
@@ -62,11 +62,13 @@ $("table").bind("table_recalc", function(event, params) {
         });
 
         $(".te-table-column-resize-dragger").live("mousedown", function(e) {
+            //prevent browser from adding some sort of cursor - mozilla does this
+            e.preventDefault();
             Mercury.log("what object is this: ", $(selector) + " event: " + e);
             var position = $(this).position();
-            $(wrapper).find(".te-table-column-resize-guide").css("top", position.top).css("left", position.left).show();
+            $(wrapper).find(".te-table-column-resize-guide").css("top", position.top).css("left", position.left).css("height",$(selector).height()).show();
         });
-        
+
     }
 
     $.fn.setupTables = function() {
