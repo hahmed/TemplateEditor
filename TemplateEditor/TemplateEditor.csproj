@@ -120,7 +120,7 @@
     <Content Include="assets\aloha\plugins\common\undo\vendor\undo.js" />
     <Content Include="assets\css\Site.css" />
     <Content Include="assets\js\alohaconfig.js" />
-    <Content Include="assets\js\colresizer.js" />
+    <Content Include="assets\mercury\javascripts\colresizer.js" />
     <Content Include="assets\js\jquery-1.4.1-vsdoc.js" />
     <Content Include="assets\js\jquery-1.4.1.js" />
     <Content Include="assets\js\jquery-1.4.1.min.js" />

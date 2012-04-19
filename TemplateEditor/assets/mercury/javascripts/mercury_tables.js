@@ -1,7 +1,4 @@
-﻿
-//$("#some-element").trigger("main_event", "Known at execution time");
-
-//trigger an event so the table can be disabled then re-enabled - so all handlers can be added again
+﻿//trigger an event so the table can be disabled then re-enabled - so all handlers can be added again
 (function($) {
     //
     // Table resizer plugin
@@ -87,40 +84,3 @@
     };
 
 })(jQuery);
-
-
-var onSampleResized = function(e) {
-    var table = jQuery(e.currentTarget); //reference to the resized table
-};
-
-jQuery("table").live("click", function(e) {
-    jQuery(this).colResizable({
-        liveDrag: false,
-        draggingClass: "dragging",
-        onResize: onSampleResized
-    });
-});
-
-
-jQuery(function() {
-
-$("body").bind("table_recalc", function(event, params) {
-
-    console.debug("recalc table................");
-});
-
-
-//    Mercury.PageEditor.prototype.DisableTable = function(param) {
-//        Mercury.log("what object called me: ", $(param));
-//        jQuery(param).colResizable({ disable: true });
-//    };
-
-//    Mercury.PageEditor.prototype.EnableTable = function(param) {
-//        Mercury.log("what object called me: ", $(param));
-//        jQuery(param).colResizable({
-//            liveDrag: false,
-//            draggingClass: "dragging"
-//        });
-//    };
-
-});

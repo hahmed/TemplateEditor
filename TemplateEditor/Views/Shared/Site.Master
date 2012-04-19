@@ -12,11 +12,11 @@
 
     <script type="text/javascript" src="../../assets/js/jquery-1.7.1.min.js"></script>
 
-    <script type="text/javascript" src="../../assets/js/colresizer.js"></script>
+<%--    <script type="text/javascript" src="../../assets/js/colresizer.js"></script>
 
     <script type="text/javascript" src="../../assets/mercury/javascripts/mercury_tables.js"></script>
 
-    <script type="text/javascript" src="../../assets/mercury/javascripts/mercury_loader.js"></script>
+--%>    <script type="text/javascript" src="../../assets/mercury/javascripts/mercury_loader.js"></script>
 
 </head>
 <body>

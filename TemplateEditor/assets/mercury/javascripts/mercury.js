@@ -17275,10 +17275,9 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                     },
                     insertColumnBefore: function(selection) {
                         Mercury.log("my table....", Mercury.tableEditor.currentTable());
-                        jQuery("body").trigger('table_recalc');
 
                         var result = Mercury.tableEditor.addColumn('before');
-                        //Mercury.PageEditor.prototype.EnableTable(Mercury.tableEditor.currentTable());
+                        Mercury.TemplateEditor.DisableTable(Mercury.tableEditor.currentTable());
                         return result;
                     },
                     insertColumnAfter: function() {

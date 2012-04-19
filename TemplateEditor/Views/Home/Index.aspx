@@ -26,7 +26,7 @@
                 <br class="GENTICS_ephemera">
             </p>
             <div class="te-table">
-                <table style="width: 170mm;" class="te-tablerenderer">
+                <table style="width: 170mm;" class="te-tablerenderer" id="somefunkytbl">
                     <tbody style="text-align: left;">
                         <tr style="text-align: left;" class="">
                             <td class="aloha-table-selectrow" style="width: 10px;">

@@ -1,5 +1,51 @@
-﻿jQuery(window).bind('mercury:ready', function() {
+﻿Mercury.TemplateEditor = {};
+Mercury.TemplateEditor.ColResize = function() {
+
+    var onSampleResized = function(e) {
+        var table = jQuery(e.currentTarget); //reference to the resized table
+    };
+
+    //initialize all tables...
+    jQuery("table").live("click", function(e) {
+        Mercury.log("what object nuked me: ", $(this));
+
+        jQuery(this).colResizable({
+            liveDrag: false,
+            draggingClass: "dragging",
+            onResize: onSampleResized
+        });
+
+    });
+};
+
+Mercury.TemplateEditor.DisableTable = function(selector) {
+
+    Mercury.log("what object disabled me: ", jQuery(selector));
+    var onSampleResized = function(e) {
+        var table = jQuery(e.currentTarget); //reference to the resized table
+    };
+
+    //    Mercury.PageEditor.prototype.DisableTable = function(param) {
+    //        Mercury.log("what object called me: ", $(param));
+    jQuery(selector).colResizable({
+        disable: true
+    });
+    
+    //    };
+
+    //    Mercury.PageEditor.prototype.EnableTable = function(param) {
+    //        Mercury.log("what object called me: ", $(param));
+    //        jQuery(param).colResizable({
+    //            liveDrag: false,
+    //            draggingClass: "dragging"
+    //        });
+    //    };
+};
+
+jQuery(window).bind('mercury:ready', function() {
     Mercury.saveUrl = jQuery("meta[name=saveurl]").attr("content");
+
+    Mercury.TemplateEditor.ColResize();
 
     Mercury.modalHandlers.addTemplateField = function() {
         var fieldSelect, container, existingLink, selection, _this = this;
