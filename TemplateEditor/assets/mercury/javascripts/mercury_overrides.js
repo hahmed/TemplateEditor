@@ -19,28 +19,26 @@ Mercury.TemplateEditor.ColResize = function() {
 };
 
 Mercury.TemplateEditor.DisableTable = function(selector) {
-
-    Mercury.log("what object disabled me: ", jQuery(selector));
-    var onSampleResized = function(e) {
-        var table = jQuery(e.currentTarget); //reference to the resized table
-    };
-
-    //    Mercury.PageEditor.prototype.DisableTable = function(param) {
-    //        Mercury.log("what object called me: ", $(param));
     jQuery(selector).colResizable({
         disable: true
     });
-    
-    //    };
-
-    //    Mercury.PageEditor.prototype.EnableTable = function(param) {
-    //        Mercury.log("what object called me: ", $(param));
-    //        jQuery(param).colResizable({
-    //            liveDrag: false,
-    //            draggingClass: "dragging"
-    //        });
-    //    };
 };
+
+Mercury.TemplateEditor.EnableTable = function(selector) {
+
+    Mercury.log("what object enabled me: ", jQuery(selector));
+    var onSampleResized = function(e) {
+        var table = jQuery(e.currentTarget); //reference to the resized table
+    };
+    
+    jQuery(selector).colResizable({
+        disable: false,
+        liveDrag: false,
+        draggingClass: "dragging",
+        onResize: onSampleResized
+    });
+};
+
 
 jQuery(window).bind('mercury:ready', function() {
     Mercury.saveUrl = jQuery("meta[name=saveurl]").attr("content");

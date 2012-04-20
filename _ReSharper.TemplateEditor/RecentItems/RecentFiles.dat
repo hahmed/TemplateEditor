@@ -1,62 +1,18 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Controllers/f:AccountController.cs" caret="4855" fromTop="148" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Views/d:Home/f:oldIndex.aspx" caret="23733" fromTop="10" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Models/f:AccountModels.cs" caret="11216" fromTop="16" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Models/f:PdfConvert.cs" caret="0" fromTop="0" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Views/d:Home/f:Copy (2) of Index.aspx" caret="1184" fromTop="18" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:views/d:snippets/d:example/f:preview.html.erb" caret="0" fromTop="0" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:views/d:snippets/d:example/f:options.html.erb" caret="0" fromTop="0" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:lib/f:test.xhtml" caret="403" fromTop="7" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/f:Global.asax.cs" caret="697" fromTop="14" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Controllers/f:HomeController.cs" caret="1821" fromTop="30" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:js/f:alohaconfig.js" caret="5658" fromTop="33" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:views/d:modals/f:tFields.html" caret="873" fromTop="17" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:js/f:MicrosoftMvcAjax.debug.js" caret="0" fromTop="0" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:colresizer.js" caret="0" fromTop="0" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:stylesheets/f:mercury.bundle.css" caret="139415" fromTop="35" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:helper.debug.js" caret="0" fromTop="0" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:plugin.debug.js" caret="9246" fromTop="9" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument.html" caret="73720" fromTop="21" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument (2).html" caret="427" fromTop="19" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury.js" caret="731820" fromTop="21" />
     <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_tables.js" caret="0" fromTop="0" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Views/d:Shared/f:Site.Master" caret="991" fromTop="20" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Views/d:Home/f:Index.aspx" caret="940" fromTop="22" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_loader.js" caret="251" fromTop="4" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:css/f:Site.css" caret="5131" fromTop="16" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="995" fromTop="32" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="696" fromTop="14" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury.js" caret="731835" fromTop="15" />
   </RecentFiles>
   <RecentEdits>
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument.html" caret="2080" fromTop="5" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument.html" caret="2561" fromTop="5" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument.html" caret="3142" fromTop="9" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument.html" caret="3512" fromTop="4" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument.html" caret="3909" fromTop="10" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument.html" caret="4208" fromTop="14" />
-    <File id="1F48C78B-01DF-4AC6-967E-280061F1D7A6/f:Untitleddocument (2).html" caret="76" fromTop="3" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_tables.js" caret="3341" fromTop="27" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_tables.js" caret="3341" fromTop="24" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1440" fromTop="10" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_tables.js" caret="3341" fromTop="14" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_tables.js" caret="0" fromTop="0" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1440" fromTop="25" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1440" fromTop="34" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury.js" caret="731684" fromTop="19" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1440" fromTop="7" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1440" fromTop="4" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="0" fromTop="0" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="523" fromTop="34" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="523" fromTop="24" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1432" fromTop="12" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1310" fromTop="34" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Views/d:Home/f:Index.aspx" caret="1164" fromTop="22" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:Views/d:Shared/f:Site.Master" caret="879" fromTop="18" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_loader.js" caret="1817" fromTop="28" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:css/f:Site.css" caret="5218" fromTop="22" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="956" fromTop="26" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="782" fromTop="26" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="327" fromTop="9" />
-    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="995" fromTop="29" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1093" fromTop="28" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1089" fromTop="24" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1084" fromTop="17" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="587" fromTop="4" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="787" fromTop="11" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="1089" fromTop="9" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury_overrides.js" caret="919" fromTop="19" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury.js" caret="20870" fromTop="6" />
+    <File id="5818C1DA-0FFB-494A-8448-BBEF37F3B378/d:assets/d:mercury/d:javascripts/f:mercury.js" caret="731835" fromTop="15" />
   </RecentEdits>
 </RecentFiles>

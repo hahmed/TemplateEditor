@@ -356,8 +356,8 @@ window.Mercury = {
         globalBehaviors: {
             exit: function() { window.location.href = this.iframeSrc(); },
             barrelRoll: function() { $('body').css({ webkitTransform: 'rotate(360deg)' }); },
-            disableTable: function(param) {Mercury.log("what object called me: ", $(param));jQuery(param).colResizable({ disable: true });},
-            enableTable: function(param) {Mercury.log("what object called me: ", $(param));jQuery(param).colResizable({liveDrag: false,draggingClass: "dragging"});}
+            //disableTable: function(param) {Mercury.log("what object called me: ", $(param));jQuery(param).colResizable({ disable: true });},
+            //enableTable: function(param) {Mercury.log("what object called me: ", $(param));jQuery(param).colResizable({liveDrag: false,draggingClass: "dragging"});}
         },
 
         // ## Ajax and CSRF Headers
@@ -17274,10 +17274,11 @@ c.options.snap.release && c.options.snap.release.call(c.element, a, d.extend(c._
                         return Mercury.tableEditor.addRow('after');
                     },
                     insertColumnBefore: function(selection) {
-                        Mercury.log("my table....", Mercury.tableEditor.currentTable());
+                        Mercury.TemplateEditor.DisableTable(Mercury.tableEditor.currentTable());
 
                         var result = Mercury.tableEditor.addColumn('before');
-                        Mercury.TemplateEditor.DisableTable(Mercury.tableEditor.currentTable());
+                        Mercury.TemplateEditor.EnableTable(Mercury.tableEditor.currentTable());
+
                         return result;
                     },
                     insertColumnAfter: function() {

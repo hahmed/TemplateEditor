@@ -13,3 +13,4 @@ C:\Projects\TemplateEditor\TemplateEditor\obj\Debug\ResolveAssemblyReference.cac
 C:\Projects\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.dll
 C:\Projects\TemplateEditor\TemplateEditor\obj\Debug\TemplateEditor.pdb
 C:\Projects\devnet\TemplateEditor\TemplateEditor\bin\Newtonsoft.Json.dll
+C:\Projects\TemplateEditor\TemplateEditor\bin\Newtonsoft.Json.dll
