@@ -1,6 +1,6 @@
 # Compiled source #
 ###################
-/_ReSharper.TemplateEditor/*
+_ReSharper.TemplateEditor/*
 bin/
 obj/
 *.exe
